@@ -50,3 +50,7 @@ robot.arm.wait_until_at_setpoint()
 robot.base.rotate_by(np.radians(180)) # Rotate base by 180 degrees
 robot.push_command()
 robot.arm.wait_until_at_setpoint()
+robot.base.translate_by(0.5) # Move robot base 0.5 meters forward
+robot.push_command()
+robot.arm.wait_until_at_setpoint()
+
