@@ -26,7 +26,7 @@ try:
     robot.push_command()
     time.sleep(2.0)
 
-    robot.end_of_arm.move_to('wrist_pitch', np.radians(30))
+    robot.end_of_arm.move_to('wrist_pitch', np.radians(15))
     robot.push_command()
     time.sleep(2.0)
 
