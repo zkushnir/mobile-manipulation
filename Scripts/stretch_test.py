@@ -24,31 +24,31 @@ try:
 
     robot.end_of_arm.move_to('wrist_yaw', np.radians(30))
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.end_of_arm.move_to('wrist_pitch', np.radians(30))
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.end_of_arm.move_to('wrist_roll', np.radians(30))
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.end_of_arm.move_to('stretch_gripper', 50)
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.end_of_arm.move_to('stretch_gripper', 0)
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.head.move_by('head_pan', np.radians(45))
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.head.move_by('head_tilt', np.radians(45))
     robot.push_command()
-    time.sleep(5.0)
+    time.sleep(2.0)
 
     robot.stow()
     robot.push_command()
