@@ -37,7 +37,7 @@ class StretchSequenceNode(HelloNode):
 
         # 4. Open and close gripper
         self.get_logger().info('Opening gripper...')
-        self.move_to_pose({'joint_gripper_finger_left': 0.05})  # Open to 5cm
+        self.move_to_pose({'joint_gripper_finger_left': 0.25})  # Open to 5cm
         time.sleep(2)
 
         self.get_logger().info('Closing gripper...')
