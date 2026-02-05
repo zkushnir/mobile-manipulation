@@ -28,7 +28,7 @@ class StretchSequenceNode(HelloNode):
         time.sleep(2)
 
         self.get_logger().info('Moving wrist pitch...')
-        self.move_to_pose({'joint_wrist_pitch': np.radians(30)})
+        self.move_to_pose({'joint_wrist_pitch': np.radians(10)})
         time.sleep(2)
 
         self.get_logger().info('Moving wrist roll...')
