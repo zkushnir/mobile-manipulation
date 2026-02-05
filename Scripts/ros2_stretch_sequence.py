@@ -25,15 +25,15 @@ class StretchSequenceNode(HelloNode):
         # 3. Move wrist joints one at a time
         self.get_logger().info('Moving wrist yaw...')
         self.move_to_pose({'joint_wrist_yaw': np.radians(30)})
-        time.sleep(2)
+        time.sleep(1)
 
         self.get_logger().info('Moving wrist pitch...')
         self.move_to_pose({'joint_wrist_pitch': np.radians(10)})
-        time.sleep(2)
+        time.sleep(1)
 
         self.get_logger().info('Moving wrist roll...')
         self.move_to_pose({'joint_wrist_roll': np.radians(30)})
-        time.sleep(2)
+        time.sleep(1)
 
         # 4. Open and close gripper
         self.get_logger().info('Opening gripper...')
@@ -47,11 +47,11 @@ class StretchSequenceNode(HelloNode):
         # 5. Move head pan and tilt
         self.get_logger().info('Moving head pan...')
         self.move_to_pose({'joint_head_pan': np.radians(45)})
-        time.sleep(2)
+        time.sleep(1)
 
         self.get_logger().info('Moving head tilt...')
         self.move_to_pose({'joint_head_tilt': np.radians(45)})
-        time.sleep(2)
+        time.sleep(1)
 
         # 6. Stow again using the stow service
         self.get_logger().info('Stowing robot again...')
